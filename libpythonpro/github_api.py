@@ -7,11 +7,12 @@ def buscar_avatar(usuario):
     Args:
         usuario ([type]): [str com nome do usário no github]
     """
-    url = f'https://api.github.com/usuarios/{usuario}'
+    url = f'https://api.github.com/users/{usuario}'
     response = requests.get(url)
-    return response.json()['avatar_url']
+    response = response.json()
+    return response['avatar_url']
 
 
 if __name__ == "__main__":
-    response = buscar_avatar('elyasSantana')
+    response = buscar_avatar('elyasma9')
     print(str(response))
