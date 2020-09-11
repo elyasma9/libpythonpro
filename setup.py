@@ -104,9 +104,9 @@ def find_package_data(
 PACKAGE = "libpythonpro"
 NAME = PACKAGE
 DESCRIPTION = "Módulo para exemplificar construção de projetos Python no curso PyTools"
-AUTHOR = "Renzo Nuccitelli"
-AUTHOR_EMAIL = "renzo@python.pro.br"
-URL = "https://github.com/pythonprobr/libpythonpro"
+AUTHOR = "Elyas Aguiar Santana"
+AUTHOR_EMAIL = "elyassantana01@gmail.com"
+URL = "https://github.com/elyasma9/libpythonpro/"
 VERSION = __import__(PACKAGE).__version__
 
 setup(
@@ -117,7 +117,7 @@ setup(
     long_description_content_type='text/markdown',
     author=AUTHOR,
     author_email=AUTHOR_EMAIL,
-    license="GNU AFFERO GENERAL PUBLIC LICENSE",
+    license=read("LICENSE"),
     url=URL,
     packages=find_packages(exclude=["tests.*", "tests"]),
     package_data=find_package_data(PACKAGE, only_in_packages=False),
